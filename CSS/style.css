@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    font-family: "Playfair Display", serif;
+}
+
+:root {
+    --gold: #d19029;
+}
+
+.video {
+    width: 100%;
+    height: 120vh;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.556);
+    height: 120vh !important;
+    overflow: hidden;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    background-color: var(--gold);
+    box-shadow: none !important;
+}
+
+.nav-link:hover {
+    color: gray !important;
+}
+
+.nav-link i {
+    color: var(--gold);
+    font-size: 1.2rem;
+}
+
+.nav-link i:hover {
+    color: white;
+}
+
+.navbar .active {
+    color: var(--gold) !important;
+}
+
+.nav-icon li {
+    display: flex !important;
+}
+
+.header .btn {
+    position: relative;
+    background-color: var(--gold);
+    transition: all .5s;
+    z-index: 2;
+    border-radius: 0px;
+}
+
+.header .btn::before,
+.header .btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header .btn::before {
+    background-color: var(--gold);
+    width: 3%;
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: all .5s;
+    z-index: -2;
+    height: 100%;
+}
+
+.header .btn:hover::before {
+    transform: scaleY(1);
+}
+
+.header .btn:hover {
+    background-color: white;
+    color: var(--gold) !important;
+}
+
+.col {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.building, .security {
+    width: 100%;
+}
+
+.building i, .security i {
+    color: var(--gold);
+}
+
+.building {
+    border-left: 10px solid var(--gold);
+    margin-left: -1%;
+    transition: all .5s;
+    position: relative;
+}
+
+.security {
+    border-right: 10px solid var(--gold);
+    transition: all .5s;
+}
+
+.bs-hover {
+    background-color: var(--gold);
+    border-left: 10px solid rgba(207, 201, 201, 0.51);
+    opacity: 1;
+}
+
+.bs-hover-i {
+    color: white !important;
+    opacity: 1;
+}
+
+.bi-arrow-down-circle {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.bi-arrow-down-circle:hover {
+    color: var(--gold) !important;
+    background-color: white;
+}
+
+.about-us h5 {
+    color: var(--gold);
+}
+
+.about-us-img {
+    background: linear-gradient(to top, white 5%, #acc8e9 95%);
+    position: relative;
+    height: 40vh;
+    width: 100%;
+}
+
+.about-us-img .img {
+    position: absolute;
+    bottom: 35%;
+    right: 0%;
+    animation: dance 5s linear infinite;
+}
+
+.numbers i{
+    color: var(--gold);
+}
+
+.numbers .col-3:hover {
+    background-color: var(--gold);
+    color: white !important;
+    border-radius: 10px;
+}
+
+.numbers .col-3:hover i {
+    color: white;
+}
+
+.bg {
+    display: inline-block;
+    margin-top: 2%;
+    transition: background-color .5s, color .5s;
+}
+
+.numbers .col-3:hover .bg {
+    background-color: white;
+    color: var(--gold);
+    border-radius: 50%;
+    animation: spin 1s linear forwards;
+}
+
+@keyframes spin {
+    100% { transform: rotateY(1turn);}
+}
+
+.numbers .col-3:hover .text-secondary {
+    color: white !important;
+}
+
+.show {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  background: linear-gradient(to right, white 50%, var(--gold) 50%);
+  background-size: 200%;
+  background-position: 0;
+  background-clip: text;
+  animation: slideColor 5s 1s forwards;
+}
+
+.pupose-img {
+    position: relative;
+}
+
+.pupose-img .button {
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+}
+
+.pupose-img .button .btn {
+    background-color: var(--gold);
+    border-radius: 0px !important;
+    color: white;
+    position: relative;
+    transition: all .5s;
+}
+
+.pupose-img .button .btn:hover {
+    background-color: black;
+}
+
+.pupose-img .button .btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3%;
+    height: 100%;
+    background-color: var(--gold);
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: all .5s;
+}
+
+.pupose-img .button .btn:hover::after {
+    transform: scaleY(1);
+}
+
+.our-pupose h6, .our-pupose i {
+    color: var(--gold);
+}
+
+.our-pupose img {
+    height: 70vh;
+    width: 100%;
+}
+
+.our-pupose .d-flex {
+    transform: translateX(0);
+    transition: all .5s;
+}
+
+.our-pupose .d-flex:hover {
+    transform: translateX(5%);
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.304);
+}
+
+.our-pupose i {
+    height: 100%;
+    width: 100%;
+    transition: all .5s;
+}
+
+.our-pupose .d-flex:hover i {
+    background-color: var(--gold);
+    color: white;
+}
+
+.contact-bg {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    animation: bgFade 15s infinite;
+}
+
+@keyframes bgFade {
+    0% { background-image: url('/Images/carousel15.jpg'); }
+    33% { background-image: url('/Images/carousel13.jpg'); }
+    66% { background-image: url('/Images/carousel10.jpg'); }
+    100% { background-image: url('/Images/carousel15.jpg'); }
+}
+
+.contact-us {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.701);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.contact-us .btn {
+    background-color: var(--gold);
+    color: white;
+    border-radius: 0px;
+    position: relative;
+}
+
+.contact-us .btn:hover {
+    background-color: white;
+    color: var(--gold);
+}
+
+.contact-us .btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3%;
+    height: 100%;
+    background-color: var(--gold);
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: all .5s;
+}
+
+.contact-us .btn:hover::after {
+    transform: scaleY(1);
+}
+
+@keyframes slideColor {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.offering .mx-auto {
+    width: 100%;
+}
+
+.offering i, .offering h6 {
+    color: var(--gold);
+}
+
+.offering .col-12 {
+    position: relative;
+    background-color: rgba(220, 219, 219, 0.156);
+    transition: all .5s;
+    transform: translateY(0);
+}
+
+.offering .col-12:hover {
+    background-color: white;
+    border: 1px solid var(--gold);
+    box-shadow: 0 0 10px var(--gold);
+    transform: translateY(3%);
+}
+
+.icon-bg i {
+    display: inline-block;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.icon-bg {
+    position: relative;
+    display: inline-block;
+    width:25%;
+    text-align: center;
+    z-index: 1;
+}
+
+.icon-bg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--gold);
+    width: 100%;
+    height: 0%;
+    transition: all 1s;
+    z-index: -4;
+    border-radius: 10px;
+}
+
+.offering .col-12:hover .icon-bg::after {
+    height: 100%;
+}
+
+.offering .col-12:hover i {
+    color: white;   
+    animation: rotate .5s 1 linear;
+}
+
+.offering .col-12:hover .icon-con {
+    color: var(--gold);
+}
+
+.offering .col-12:hover .text-secondary {
+    color: black !important;
+}
+
+@keyframes rotate {
+    to { transform: rotateY(1turn);}
+}
+
+.residence h6 {
+    color: var(--gold);
+}
+
+.res-img {
+    background: linear-gradient(to top, white 5%, #acc8e9 95%);
+    position: relative;
+    height: 70vh;
+    width: 100%;
+}
+
+.res-img .image {
+    position: absolute;
+    bottom: 5%;
+    animation: dance 5s linear infinite;
+}
+
+@keyframes dance {
+    0% { transform: translateY(0%); }
+    50% { transform: translateY(5%); }
+    100% { transform: translateY(0%); }
+}
+
+.res-con h4, .res-con i {
+    color: var(--gold);
+}
+
+.res-con .btn {
+    background-color: var(--gold);
+    border-radius: 0px;
+    color: white;
+    position: relative;
+}
+
+.res-con .btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--gold);
+    width: 3%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: all .5s;
+}
+
+.res-con .btn:hover::after {
+    transform: scaleY(1);
+}
+
+.res-con .btn:hover {
+    background-color: black;
+}
+
+.res-item {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.res-item img {
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    transition: all .5s;
+    border-radius: 10px;
+}
+
+.res-item-con {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: all .5s;
+    width: 60%;
+}
+
+.price {
+    color: var(--gold);
+    transition: all .5s;
+}
+
+.res-item-icon p:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+.res-item-icon i {
+    color: var(--gold);
+}
+
+.res-item:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.638);
+}
+
+.res-item img:hover {
+    transform: scale(1.1);
+}
+
+.res-item:hover .res-item-con {
+    background-color: var(--gold);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.res-item:hover .price {
+    color: white;
+}
+
+.partner {
+    background-color: rgba(141, 138, 138, 0.155);
+}
+
+.partner h6 {
+    color: var(--gold);
+}
+
+.slide-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  width: max-content;
+}
+
+.scroll-animate {
+    animation: scroll 20s linear infinite;
+}
+
+.slide-track img {
+  width: 200px;
+  margin: 0 20px;
+  transition: transform 0.3s ease;
+}
+
+.slide-track img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slide-container:hover .slide-track {
+  animation-play-state: paused;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+.company {
+    color: var(--gold);
+}
+
+.footer li {
+    line-height: 2.5;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer li:hover a, .footer a:hover {
+    color: var(--gold);
+}
+
+.footer .bi-geo-alt-fill, 
+.footer .bi-telephone-fill, 
+.footer .bi-stopwatch-fill {
+    color: var(--gold);
+}
+
+.loading i::before {
+    content: '';
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 992px) {
+    .col {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .building, .security {
+        width: 20vw;
+    }
+
+    .about-us-img {
+        height: 55vh;
+    }
+
+    .about-us-img .img {
+        bottom: 5%;
+    }
+
+    .offering .mx-auto {
+        width: 50%;
+    }
+
+    .contact-bg {
+        width: 94%;
+    }
+}

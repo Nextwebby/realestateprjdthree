@@ -1,0 +1,82 @@
+.contact-video {
+    width: 100%;
+    height: 90vh;
+}
+
+.contact-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-con {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.492);
+    height: 90vh;
+    width: 100%;
+}
+
+.contact-form {
+    overflow: hidden;
+}
+
+.contact-form form {
+    background-color: rgba(196, 196, 196, 0.127);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px var(--gold) !important;
+    outline: 1px solid var(--gold) !important;
+    background-color: rgba(223, 205, 179, 0.119);
+    caret-color: var(--gold);
+}
+
+iframe {
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.511);
+}
+
+.contact-form textarea {
+    height: 20ch;
+}
+
+.contact-form .btn {
+    background-color: var(--gold);
+    width: 40%;
+    color: white;
+}
+
+.talk {
+    color: var(--gold);
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.234));
+}
+
+.let {
+    position: relative;
+}
+
+.let::before {
+    content: '';
+    position: absolute;
+    background-color: var(--gold);
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+}
+
+.let.animate::before {
+    animation: line-slide linear 1s  1s forwards;
+}
+
+@keyframes line-slide {
+    to { width: 100%; }
+}
+
+@media (min-width: 992px) {
+    iframe {
+        width: 100%;
+    }
+}
