@@ -8,6 +8,10 @@
     --gold: #d19029;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .video {
     width: 100%;
     height: 120vh;
@@ -175,6 +179,10 @@
     color: white;
 }
 
+.numbers {
+    font-size: .9rem !important;
+}
+
 .bg {
     display: inline-block;
     margin-top: 2%;
@@ -262,7 +270,7 @@
 }
 
 .our-pupose .d-flex:hover {
-    transform: translateX(5%);
+    transform: translateX(1%);
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.304);
 }
 
@@ -275,6 +283,14 @@
 .our-pupose .d-flex:hover i {
     background-color: var(--gold);
     color: white;
+}
+
+.our-pupose h4 {
+    font-size: 1.1rem;
+}
+
+.our-pupose .text-secondary {
+    font-size: .8rem;
 }
 
 .contact-bg {
@@ -556,7 +572,7 @@
 }
 
 .slide-track img {
-  width: 200px;
+  width: 120px;
   margin: 0 20px;
   transition: transform 0.3s ease;
 }
@@ -640,5 +656,21 @@
 
     .contact-bg {
         width: 94%;
+    }
+
+    .numbers {
+        font-size: 1rem !important;
+    }
+
+    .our-pupose h4 {
+        font-size: 1.5rem;
+    }
+
+    .our-pupose .text-secondary {
+        font-size: 1rem;
+    }
+
+    .slide-track img {
+        width: 200px;
     }
 }
